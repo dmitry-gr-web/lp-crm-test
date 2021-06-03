@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-scroll.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="bg-modal"></div>
+        <div class="order">
+            <div class="order-header"><span class="order-info-link">Заказ № 265457</span><span class="arrow"></span><span class="order-info">Доп.информация Доп.информация Доп.информация</span><span class="switch-btn"><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                </label>
+                </span><span class="btn-close"></span></div>
+            <div class="btn-block"><button class="btn-remind">Напомнить</button><button class="btn-sms">SMS</button><button class="btn-call">Позвонить</button></div>
+            <div class="container">
+                <div class="wrap-contact-utm">
+                    <table class="contact-table">
+                        <tr>
+                            <td colspan="2" class="contact-header">Контакт</td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list">Страна:</td>
+                            <td class="contact-description country-style">
+                                <div class="dropdown-block">
+                                    <div class="btn"><span class="btn-span"><img src="img/ukraine.svg" alt="ua" class="list-img">ua</span></div>
+                                    <div class="scroll-position">
+                                        <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="country-scroll">
+                                            <div class="custom-scroll-pretty_inner">
+                                                <ul class="ul-block">
+                                                    <li class="list list-hover"><img src="img/ukraine.svg" alt="ua" class="list-img">ua</li>
+                                                    <li class="list list-hover"><img src="img/russia.svg" alt="ru" class="list-img">ru</li>
+                                                    <li class="list list-hover"><img src="img/kazakhstan.svg" alt="kz" class="list-img">kz</li>
+                                                    <li class="list list-hover"><img src="img/albania.svg" alt="alb" class="list-img">alb</li>
+                                                    <li class="list list-hover"><img src="img/ukraine.svg" alt="ua" class="list-img">ua</li>
+                                                    <li class="list list-hover"><img src="img/albania.svg" alt="alb" class="list-img">alb</li>
+                                                    <li class="list list-hover"><img src="img/russia.svg" alt="ru" class="list-img">ru</li>
+                                                </ul>
+                                            </div>
+                                            <div class="custom-scroll-pretty_track-y">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list">Покупатель:</td>
+                            <td class="contact-description"><input type="text" size="25" class="input-user letter-high" placeholder="Ваше имя"></td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list">Телефон:</td>
+                            <td class="contact-description"><span class="description-number-logo"></span><input type="number" size="20" class="input-user-phone" placeholder="Ваш телефон"></td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list">E-mail:</td>
+                            <td class="contact-description"><input name="email" type="text" size="25" class="input-user" placeholder="yuliya.mytrofanova03@gmail..."></td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list">Отдел:</td>
+                            <td class="contact-description otdel">
+                                <div class="dropdown-block">
+                                    <div class="btn"><span class="btn-span">Розничный магазин</span></div>
+                                    <div class="scroll-position">
+                                        <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="otdel-scroll">
+                                            <div class="custom-scroll-pretty_inner">
+                                                <ul class="ul-block">
+                                                    <li class="list list-hover">Розничный магазин</li>
+                                                    <li class="list list-hover">Розничный магазин</li>
+                                                    <li class="list list-hover">Оптовый отдел</li>
+                                                    <li class="list list-hover">Отдел ОАЭ</li>
+                                                    <li class="list list-hover">Black slave</li>
+                                                    <li class="list list-hover">Отдел ОАЭ</li>
+                                                    <li class="list list-hover">Оптовый отдел</li>
+                                                </ul>
+                                            </div>
+                                            <div class="custom-scroll-pretty_track-y">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list">Статус заказа:</td>
+                            <td class="contact-description status">
+                                <div class="dropdown-block">
+                                    <div class="btn"><span class="status-color"></span><span class="btn-span">Новый</span>
+                                    </div>
+                                    <div class="scroll-position">
+                                        <div class="custom-scroll-pretty_covntainer custom-scroll-pretty_hidden-x" id="status-scroll">
+                                            <div class="custom-scroll-pretty_inner">
+                                                <ul class="ul-block">
+                                                    <li class="list list-yellow">Новый</li>
+                                                    <li class="list list-yellow">Новый</li>
+                                                    <li class="list list-green">Принято</li>
+                                                    <li class="list list-red">Отказ</li>
+                                                    <li class="list list-blue">Отправлено</li>
+                                                    <li class="list list-green">Принято</li>
+                                                    <li class="list list-blue">Отправлено</li>
+                                                </ul>
+                                            </div>
+                                            <div class="custom-scroll-pretty_track-y">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list another-style">Причина отказа:</td>
+                            <td class="contact-description another-opacity user-decline">
+                                <div class="dropdown-block">
+                                    <div class="btn"><span class="btn-span">Передумал покупать</span></div>
+                                    <div class="scroll-position">
+                                        <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="user-decline-scroll">
+                                            <div class="custom-scroll-pretty_inner">
+                                                <ul class="ul-block">
+                                                    <li class="list list-hover">Передумал покупать</li>
+                                                    <li class="list list-hover">Не подошло</li>
+                                                    <li class="list list-hover">Передумал покупать</li>
+                                                    <li class="list list-hover">Передумал покупать</li>
+                                                    <li class="list list-hover">Передумал покупать</li>
+                                                    <li class="list list-hover">Передумал покупать</li>
+                                                    <li class="list list-hover">Передумал покупать</li>
+                                                </ul>
+                                            </div>
+                                            <div class="custom-scroll-pretty_track-y">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contact-list">Способ оплаты:</td>
+                            <td class="contact-description pay">
+                                <div class="dropdown-block">
+                                    <div class="btn"><span class="btn-span"><img src="img/card.svg" alt="ua" class="list-img"></span></div>
+                                    <div class="scroll-position">
+                                        <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="pay-scroll">
+                                            <div class="custom-scroll-pretty_inner">
+                                                <ul class="ul-block">
+                                                    <li class="list list-hover"><img src="img/card.svg" alt="card" class="list-img"></li>
+                                                    <li class="list list-hover"><img src="img/card.svg" alt="card" class="list-img">Предоплата</li>
+                                                    <li class="list list-hover"><img src="img/Frame.svg" alt="card" class="list-img">Наложеный платеж</li>
+                                                    <li class="list list-hover"><img src="img/Coin.svg" alt="card" class="list-img coin-position">Оплачено</li>
+                                                    <li class="list list-hover"><img src="img/card.svg" alt="card" class="list-img">Предоплата</li>
+                                                    <li class="list list-hover"><img src="img/Frame.svg" alt="card" class="list-img">Наложеный платеж</li>
+                                                    <li class="list list-hover"><img src="img/Coin.svg" alt="card" class="list-img coin-position">Оплачено</li>
+                                                </ul>
+                                            </div>
+                                            <div class="custom-scroll-pretty_track-y">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="comment-block">
+                        <div class="comment">Комментарий</div>
+                        <textarea class="comment-input letter-high"></textarea>
+                    </div>
+                    <table class="utm-table">
+                        <tr>
+                            <td colspan="2" class="contact-header">UTM - метки</td>
+                        </tr>
+                        <tr>
+                            <td class="utm-list">utm_source:</td>
+                            <td class="utm-description">facebook</td>
+                        </tr>
+                        <tr>
+                            <td class="utm-list">utm_medium:</td>
+                            <td class="utm-description">instalenta_ru</td>
+                        </tr>
+                        <tr>
+                            <td class="utm-list">utm_term:</td>
+                            <td class="utm-description">fit3</td>
+                        </tr>
+                        <tr>
+                            <td class="utm-list">utm_content:</td>
+                            <td class="utm-description">tex1</td>
+                        </tr>
+                        <tr>
+                            <td class="utm-list">utm_source:</td>
+                            <td class="utm-description">мамы_25_60_18_30</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="wrap-delivery-info-fields">
+                    <table class="delivery-table">
+                        <tr>
+                            <td colspan="2" class="contact-header">Доставка</td>
+                        </tr>
+                        <tr>
+                            <td class="delivery-list">Способ:</td>
+                            <td class="delivery-description mail">
+                                <div class="dropdown-block">
+                                    <div class="btn"><span class="btn-span"><img src="img/mail.svg" alt="np" class="list-img">Нова Пошта</span></div>
+                                    <div class="scroll-position">
+                                        <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="mail-scroll">
+                                            <div class="custom-scroll-pretty_inner">
+                                                <ul class="ul-block">
+                                                    <li class="list list-hover"><img src="img/mail.svg" alt="np" class="list-img">Нова Пошта</li>
+                                                    <li class="list list-hover"><img src="img/mail.svg" alt="np" class="list-img">Нова Пошта</li>
+                                                    <li class="list list-hover"><img src="img/logoshape.svg" alt="up" class="list-img">Укрпочта</li>
+                                                    <li class="list list-hover"><img src="img/russ.png" alt="pr" class="list-img rus-icon">Почта России</li>
+                                                    <li class="list list-hover"><img src="img/mail.svg" alt="np" class="list-img">Нова Пошта</li>
+                                                    <li class="list list-hover"><img src="img/logoshape.svg" alt="up" class="list-img">Укрпочта</li>
+                                                    <li class="list list-hover"><img src="img/russ.png" alt="pr" class="list-img rus-icon">Почта России</li>
+                                                </ul>
+                                            </div>
+                                            <div class="custom-scroll-pretty_track-y">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="delivery-list">TTH:</td>
+                            <td class="delivery-description"><input type="number" size="19" class="input-ttn" placeholder="ТТН"></td>
+                        </tr>
+                        <tr>
+                            <td class="delivery-list">Адрес:<span class="pen-logo"></span></td>
+                            <td class="delivery-description"><input type="text" size="19" class="input-address letter-high" placeholder="Адресса"></td>
+                        </tr>
+                        <tr>
+                            <td class="delivery-list">Отправлено:</td>
+                            <td class="delivery-description calendary-btn"><span class="calendary-logo"></span><input value="" type="text" id="datepicker" size="12" placeholder="14.01.2021" readonly></td>
+                        </tr>
+                    </table>
+                    <table class="info-table">
+                        <tr>
+                            <td colspan="2" class="contact-header">Информация</td>
+                        </tr>
+                        <tr>
+                            <td class="info-list">Сотрудник:</td>
+                            <td class="info-description user-select">
+                                <div class="dropdown-block">
+                                    <div class="btn"><span class="btn-span">Юля Дизайнер</span></div>
+                                    <div class="scroll-position">
+                                        <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="user-select-scroll">
+                                            <div class="custom-scroll-pretty_inner">
+                                                <ul class="ul-block">
+                                                    <li class="list list-hover">Дима Дизайнер</li>
+                                                    <li class="list list-hover">Ваня Дизайнер</li>
+                                                    <li class="list list-hover">Валера Дизайнер</li>
+                                                    <li class="list list-hover">Макс Дизайнер</li>
+                                                    <li class="list list-hover">Рома Дизайнер</li>
+                                                    <li class="list list-hover">Леха Дизайнер</li>
+                                                    <li class="list list-hover">Юля Дизайнер</li>
+                                                </ul>
+                                            </div>
+                                            <div class="custom-scroll-pretty_track-y">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info-list">IP:</td>
+                            <td class="info-description ip-color-lock">178.213.0.225<span class="lock-logo"></span><span class="unlock-logo"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="info-list">Сайт:</td>
+                            <td class="info-description site-style"><a href="#">elastica.mysports.ru</a>
+                                <a href="#" class="site-link"><img class="site-link-img" src="img/link.png" alt="link-site"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info-list">order_id:</td>
+                            <td class="info-description">15957545764 <span class="i-history"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="info-list"></td>
+                            <td class="info-description data-style">от 26.07.2020 09:09:36</td>
+                        </tr>
+                    </table>
+                    <table class="field-table">
+                        <tr>
+                            <td class="contact-header">Дополнительные поля<span class="pen-logo"></span></td>
+                        </tr>
+                    </table>
+                    <div class="table-scroll">
+                        <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="field-scroll">
+                            <div class="custom-scroll-pretty_inner">
+                                <table>
+                                    <tr>
+                                        <td class="field-number">1</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23">
+                                            <a href="#" class="site-link"><img class="site-link-img" src="img/link.png" alt="link-site"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">2</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">3</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">4</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">5</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">6</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">7</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">8</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">9</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field-number">10</td>
+                                        <td class="field-description"><input class="field-input letter-high" type="text" size="23"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="custom-scroll-pretty_track-y">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-products-sale">
+                    <table class="product-table">
+                        <tr>
+                            <td colspan="8" class="contact-header">Товар<span class="btnplus"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="product-id">Id</td>
+                            <td class="product-id id-pos">sub id</td>
+                            <td class="product-id">sub_name</td>
+                            <td class="product-id">Товар</td>
+                            <td class="product-id">Цена</td>
+                            <td class="product-id">Кол-во</td>
+                            <td class="product-id">Итого</td>
+                            <td class="product-id"></td>
+                        </tr>
+                        <tr>
+                            <td class="product-description">5649</td>
+                            <td class="product-description id-pos">10</td>
+                            <td class="product-description">фиолетовый</td>
+                            <td class="product-description  long-str">Видеорегистратор DVR-mini *1244*</td>
+                            <td class="product-description">487.00</td>
+                            <td class="product-description id-pos">1</td>
+                            <td class="product-description">487.00</td>
+                            <td class="product-description"><span class="list-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="product-description">1880</td>
+                            <td class="product-description id-pos">45</td>
+                            <td class="product-description">черный</td>
+                            <td class="product-description long-str">Рівень лазерний Procraft LE-3D</td>
+                            <td class="product-description">1069.00</td>
+                            <td class="product-description id-pos">1</td>
+                            <td class="product-description">1069.00</td>
+                            <td class="product-description"><span class="list-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="8" class="sum"><span>Кол-во</span><span class="sum-number">2</span><span class="sum-all">1556.00</span></td>
+                        </tr>
+                    </table>
+                    <table class="sale-table">
+                        <tr>
+                            <td colspan="8" class="contact-header">Доппродажа
+                                <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                                <span class="btnplus"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sale-id">Id</td>
+                            <td class="sale-id id-pos">sub id</td>
+                            <td class="sale-id">sub_name</td>
+                            <td class="sale-id">Товар</td>
+                            <td class="sale-id">Цена</td>
+                            <td class="sale-id id-pos">Кол-во</td>
+                            <td class="sale-id">Итого</td>
+                            <td class="sale-id"></td>
+                        </tr>
+                        <tr>
+                            <td class="sale-description">806</td>
+                            <td class="sale-description id-pos">10</td>
+                            <td class="sale-description">фиолетовый</td>
+                            <td class="sale-description long-str">Автомагнитола (Xplod CDX) *1372*</td>
+                            <td class="sale-description">547.00</td>
+                            <td class="sale-description id-pos">1</td>
+                            <td class="sale-description">547.00</td>
+                            <td class="sale-description"><span class="list-delete"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="8" class="sum"><span>Кол-во</span><span class="sum-number">2</span><span class="sum-all">547.00</span></td>
+                        </tr>
+                    </table>
+                    <div class="sum-many"><span>Сумма заказа 2103.00</span></div>
+                    <div class="btn-save-close"><span></span>Сохранить и закрыть</div>
+                </div>
+            </div>
+        </div>
+        <div class="add-order">
+            <div class="add-order-header">Добавление товара на заказ<span class="btn-close-order"></span></div>
+            <table class="order-table">
+                <tr>
+                    <td class="order-list">Категория товара</td>
+                    <td class="order-description category-list">
+                        <div class="dropdown-block">
+                            <div class="btn"><span class="btn-span">аааа</span></div>
+                            <div class="scroll-position">
+                                <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="category-scroll">
+                                    <div class="custom-scroll-pretty_inner">
+                                        <ul class="ul-block">
+                                            <li class="list list-hover">asdasdas</li>
+                                            <li class="list list-hover">12312432rw</li>
+                                            <li class="list list-hover">asdasd1212e</li>
+                                            <li class="list list-hover">asdsd12d1a</li>
+                                            <li class="list list-hover">asdas1221d12</li>
+                                            <li class="list list-hover">asdas asdadwq</li>
+                                            <li class="list list-hover">asdasasd1212</li>
+                                        </ul>
+                                    </div>
+                                    <div class="custom-scroll-pretty_track-y">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="order-list">Товар</td>
+                    <td class="order-description product-list">
+                        <div class="dropdown-block">
+                            <div class="btn"><span class="btn-span">5766 -Ремень (цена: 199.00) Модель: 232=39 штук</span></div>
+                            <div class="scroll-position">
+                                <div class="custom-scroll-pretty_container custom-scroll-pretty_hidden-x" id="product-scroll">
+                                    <div class="custom-scroll-pretty_inner">
+                                        <ul class="ul-block">
+                                            <li class="list list-hover">5766 -Ремень (цена: 199.00) Модель: 232=39 штук</li>
+                                            <li class="list list-hover">5766 -Ремень (цена: 199.00) Модель: 232=39 штук</li>
+                                            <li class="list list-hover">5766 -Ремень (цена: 199.00) Модель: </li>
+                                            <li class="list list-hover">5766 -Ремень (цена: 199.00) Модель:</li>
+                                            <li class="list list-hover">5766qwe -Ремень (цена: 199.00) Модель:</li>
+                                            <li class="list list-hover">5766 -Ремень (цена: 199.00) Модель:</li>
+                                            <li class="list list-hover">5766 -Ремень (цена: 199.00) Модель:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="custom-scroll-pretty_track-y">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="order-list">ID товара</td>
+                    <td class="order-description">5766</td>
+                </tr>
+                <tr>
+                    <td class="order-list">Текущий остаток</td>
+                    <td class="order-description">39 шт.</td>
+                </tr>
+                <tr>
+                    <td class="order-list">Цена реализации</td>
+                    <td class="order-description">199.00 грн.</td>
+                </tr>
+            </table>
+            <div class="sub-id">Sub id</div>
+            <table class="sub-table">
+                <tr>
+                    <td class="sub-header">sub id</td>
+                    <td class="sub-header">Название</td>
+                    <td class="sub-header">Остаток</td>
+                    <td class="sub-header">Добавляется</td>
+                    <td class="sub-header eye-open"><img class="eye-img" src="img/Union.svg" alt="eye"></img>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub-list">10</td>
+                    <td class="sub-list">M</td>
+                    <td class="sub-list">20 штук</td>
+                    <td class="sub-list"><button class="minus" id="minus"></button><span id="num">1</span><button class="plus" id="plus"></button></td>
+                    <td class="sub-list eye-close"><img class="eye-img" src="img/Eye.svg" alt="eye"></img>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub-list">11</td>
+                    <td class="sub-list">L</td>
+                    <td class="sub-list">20 штук</td>
+                    <td class="sub-list"><button class="minus" id="minus2"></button><span id="num2">0</span><button class="plus" id="plus2"></button></td>
+                    <td class="sub-list eye-close"><img class="eye-img" src="img/Eye.svg" alt="eye"></img>
+                    </td>
+                </tr>
+            </table>
+            <div class="full-info">Итоговая информация</div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.custom.scroll.js"></script>
+    <script src="js/dropdown.btn.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-ru.js"></script>
+    <script src="js/custom.scroll.js"></script>
+    <script>
+        $(function() {
+            $("#datepicker").datepicker();
+            $("#datepicker").datepicker("option", "showButtonPanel", true);
+        });
+    </script>
+</body>
+
+</html>
